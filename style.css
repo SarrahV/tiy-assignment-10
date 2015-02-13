@@ -1,0 +1,238 @@
+/*l
+headlines - #666666
+blue-radial - #1199ba
+price - #1199ba
+hr - #dfdfdf
+text - #b2b2b2*/
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f1;
+  color:#666666;
+  font-family: Helvetica, Arial, sans-serif;  
+  font-size: .90em;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #fff;
+  width: 100%;
+  height: 80px;
+  box-shadow: 1px 0px 5px #b2b2b2;
+}
+
+h3 {
+  font-size: .90em;
+  margin: 5px 0 5px 0;
+}
+
+
+hr.thin {
+height: 1px;
+border: 0;
+color: #dfdfdf;
+background-color: #dfdfdf;
+width: 100%;
+} 
+
+.head-wrap {
+  width: 1024px;
+  margin: 0 auto 0 auto;
+  padding-top: 15px;
+}
+
+.logo img {
+  width: 100px;
+  height: 50px;
+  float: left;
+}
+
+.search {
+  float: left;
+}
+
+    form{
+      width: 375px;
+      margin: 0 auto;
+    }
+    .search-field { 
+      padding: 6px 15px 6px 30px;
+      margin: 3px; 
+      background-color: #fbfbfa; 
+      border: 1px solid #b2b2b2;
+      height: 30px;
+    }
+
+    .rounded { 
+      border-radius:3px; 
+      -moz-border-radius:3px; 
+      -webkit-border-radius:3px; 
+    }
+
+    .submit { 
+      height: 30px;
+      color:#red;
+    }
+
+.browse {
+  float:left;
+}
+
+    .browse button {
+      color:#666666;
+      font-family: Helvetica, Arial, sans-serif;  
+      font-size: .90em;
+      height: 45px;
+      padding: 6px 5px 6px 5px;
+      border-radius:3px; 
+      -moz-border-radius:3px; 
+      -webkit-border-radius:3px;
+      border: 1px solid #dfdfdf;
+      background-color: #fbfbfa; 
+    }
+
+.top-text {
+  width: 1024px;
+  padding: 25px 0 10px 0;
+  margin: 0 auto 0 auto;
+}
+/*----------------------------------------COLUMNS*/
+.col1 {
+  width: 240px;
+  height: 100%;
+  background-color:#fff;
+  padding: 5px 15px;
+  float: left;
+  margin: 0 15px 0 15px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.col2 {
+  width: 240px;
+  height: 100%;
+  background-color:#fff;
+  padding: 5px 15px;
+  float: left;
+  margin: 0 15px 0 15px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.col3 {
+  width: 240px;
+  height: 100%;
+  background-color:#fff;
+  padding: 5px 15px;
+  float: left;
+  margin: 0 15px 0 15px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.col4 {
+  width: 240px;
+  height: 100%;
+  background-color:#fff;
+  padding: 5px 15px;
+  float: left;
+  margin: 0 15px 0 15px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*----------------------------------------COLUMNS*/
+.blue {
+  color: #1199ba;
+}
+
+.cat {
+  margin-bottom: 20px;
+}
+.colors {
+  margin-bottom: 20px; 
+}
+
+ul.left-nav {
+  list-style-type: none;
+  color: #1199ba;
+  margin: 0 0 0 5px;
+  padding: 0 0 0 5px;
+  font-size: .95em;
+}
+
+.price-filter {
+  font-size: .8em;
+  margin-bottom: 20px; 
+}
+
+.price-filter p {
+  float: left;
+}
+.price-filter button {
+      color:#ccc;
+      font-family: Helvetica, Arial, sans-serif;  
+      font-size: 1.2em;
+      height: 35px;
+      padding: 6px 5px 6px 5px;
+      border-radius:3px; 
+      -moz-border-radius:3px; 
+      -webkit-border-radius:3px;
+      border: 1px solid #dfdfdf;
+      background-color: #fbfbfa; 
+      float: left;
+      margin-bottom: 20px;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7.5px 0 7.5px 9px;
+  border-color: transparent transparent transparent #7d7773;
+}
+
+.colors button {
+  border-radius:3px; 
+  -moz-border-radius:3px; 
+  -webkit-border-radius:3px;
+  border: 1px solid #dfdfdf;
+  background-color: #fbfbfa; 
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin: 0 2px 20px 2px;
+}
+
+.order {
+  margin-bottom: 20px;
+}
+
+.ordering {
+  list-style-type: none;
+  margin: 0px 0px 20px 0px;
+  padding: 0px;
+  color: #1199ba;
+}
+
+.checkbox {
+   border-radius:3px; 
+  -moz-border-radius:3px; 
+  -webkit-border-radius:3px;
+  outline: 1px solid #dfdfdf;
+  background-color: #fbfbfa; 
+  width: 20px;
+  height: 20px;
+}
+
+.shop {
+  margin-bottom: 30px;
+  color: #1199ba;
+}
+
+
