@@ -20,14 +20,55 @@ $(function(){
       dataType: "jsonp",
       success: callback
     });
-  };
+  }; // Info from Assignment
 
-});
 
-$(".search-form").on("submit", function(event) {
-  event.preventDefault();
-  
-  var keywords = $(".search-field").val();
-  
-  alert(keywords);   ////pass this to the search function provided
-});
+  getData(function(data){
+    var items = data.results;
+    items.forEach(function(item){
+      $(".products").append(productTemp(item));
+    });
+  });
+
+
+
+  $(".search-form").on("submit", function(event) {
+    event.preventDefault();
+    
+    var keywords = $(".search-field").val();  
+
+    getData(keywords, function(data){
+      var items = data.results;
+      console.log(items);
+        $(".products").empty();
+      items.forEach(function(item){
+        $(".products").append(productTemp(item));   //this will look over items and add results to template
+      });
+    });
+  });
+
+
+
+
+  var productTemp = _.template(
+    "<div class='product rounded'>" +
+      "<div class='image'>" +
+        "<img src='<%= Images[0].url_570xN %>' alt='<%= title %>'>" +
+      "</div>" +
+      "<div class='title'><%= title %></div>" +
+      "<div class='vendor'><%= Shop.shop_name %></div>" +
+      "<div class='price'>$<%= price %> <%= currency_code %></div>" +
+    "</div>"
+  );
+
+  // mytemplate for products
+
+
+
+
+
+}); // end of function scope
+
+
+
+

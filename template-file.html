@@ -1,7 +1,24 @@
-<div class="product">
-  <div class="image">
-  </div>
-  <div class="title"></div>
-  <div class="shop"></div>
-  <div class="price"></div>
-</div>
+"<div class='product rounded'>" +
+  "<div class='image'>" +
+    "<img src='<%= imgUrl %>'>' alt='<%= name %>'>" +
+  "</div>" +
+  "<div class="title"><%= name %></div>" +
+  "<div class="vendor"><%= shop_name %></div>" +
+  "<div class="price"><%= price %><%= currency_code %></div>" +
+"</div>"
+
+
+
+<form class="search-form" action="" method="">
+  <input class="search-field" type="text" name="search" placeholder="enter keywords">
+  <input type="submit" name="submit" value="search">
+</form>
+
+$(".search-form").on("submit", function(event) {
+  event.preventDefault();
+  
+  var keywords = $(".search-field").val();
+  
+  alert(keywords);   ////pass this to the search function provided
+});
+
