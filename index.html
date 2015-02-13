@@ -29,97 +29,119 @@
     <div class="top-text">
       <h3>Show results for:</h3>
     </div>
-    <div class="col1 rounded"><!-- COL1 -->
-      <h3>Item Type</h3>
-      <form>
-        <input type="radio" name="all-items" value="all-items" checked>All Items
-        <br>
-        <input type="radio" name="handmade" value="handmade">Handmade
-        <br>
-        <input type="radio" name="vintage" value="vintage">Vintage
-        <br>
-        <input type="radio" name="crafts" value="crafts">Craft Supplies
-      </form>
-      <hr class="thin">
-      <h3>Categories</h3><!-- CAT -->
-      <h3 class="blue">Handmade</h3>
-      <div class="cat">
-        <ul class="left-nav">
-          <li>Glass</li>
-          <li>Weddings</li>
-          <li>Housewares</li>
-          <li>Accessories</li>
-          <li>Art</li>
-          <li>Jewelry</li>
-          <li>Ceramics and Pottery</li>
-          <li>Clothing</li>
-        </ul>
-        <h3 class="blue">Vintage</h3><!-- VINTAGE -->
-        <ul class="left-nav">
-          <li>Collectibles</li>
-          <li>Serving</li>
-          <li>Housewares</li>
-          <li>Antique</li>
-        </ul>
-        <h3 class="blue">Craft Supplies</h3><!-- CRAFT SUPPLIES -->
-        <ul class="left-nav">
-          <li>Bead</li>
-          <li>Commercial</li>
-          <li>Scrapbooking</li>
-          <li>Fabric</li>
-        </ul>
-        <hr class="thin">
-      </div>
-      <h3>Price Filter</h3><!-- PRICE FILTER -->
-      <div class="price-filter">
-          <button>$min</button><p>to</p><button>$max</button><button>arrow</button> 
-          <hr class="thin">
-      </div>
-      <h3>Filter by Color</h3><!-- FILTER BY COLOR -->
-      <div class="colors">
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <hr class="thin">
-      </div>
-      <h3>Ordering Options</h3><!-- ORDERING OPTIONS -->
-      <div class="order">
-        <ul class="ordering">
-          <li><input type="checkbox" class="check" name="accept" value="check">&nbsp;Accepts Etsy Gift Cards</li>
-          <li><input type="checkbox" class="check" name="custom" value="custom">&nbsp;Customizable</li>
-        </ul>
-        <hr class="thin">
-      </div>
-      <h3>Shop Location</h3>
-      <div class="shop">
+    <div class="col-wrap"><!-- WRAPPER FOR COLUMNS -->
+      <div class="col1 rounded"><!-- COL1 -->
+        <h3>Item Type</h3>
         <form>
-          <input type="radio" name="anywhere" value="anywhere" checked>Anywhere
+          <input type="radio" name="all-items" value="all-items" checked>All Items
           <br>
-          <input type="radio" name="us" value="us">United States
+          <input type="radio" name="handmade" value="handmade">Handmade
+          <br>
+          <input type="radio" name="vintage" value="vintage">Vintage
+          <br>
+          <input type="radio" name="crafts" value="crafts">Craft Supplies
         </form>
-        <p>Choose a custom location</p>
+        <hr class="thin">
+        <h3>Categories</h3><!-- CAT -->
+        <h3 class="blue">Handmade</h3>
+        <div class="cat">
+          <ul class="left-nav">
+            <li>Glass</li>
+            <li>Weddings</li>
+            <li>Housewares</li>
+            <li>Accessories</li>
+            <li>Art</li>
+            <li>Jewelry</li>
+            <li>Ceramics and Pottery</li>
+            <li>Clothing</li>
+          </ul>
+          <h3 class="blue">Vintage</h3><!-- VINTAGE -->
+          <ul class="left-nav">
+            <li>Collectibles</li>
+            <li>Serving</li>
+            <li>Housewares</li>
+            <li>Antique</li>
+          </ul>
+          <h3 class="blue">Craft Supplies</h3><!-- CRAFT SUPPLIES -->
+          <ul class="left-nav">
+            <li>Bead</li>
+            <li>Commercial</li>
+            <li>Scrapbooking</li>
+            <li>Fabric</li>
+          </ul>
+          <hr class="thin">
+        </div>
+        <h3>Price Filter</h3><!-- PRICE FILTER -->
+        <div class="price-filter">
+            <button>$min</button><p>to</p><button>$max</button><button>arrow</button> 
+            <hr class="thin">
+        </div>
+        <h3>Filter by Color</h3><!-- FILTER BY COLOR -->
+        <div class="colors">
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <hr class="thin">
+        </div>
+        <h3>Ordering Options</h3><!-- ORDERING OPTIONS -->
+        <div class="order">
+          <ul class="ordering">
+            <li><input type="checkbox" class="check" name="accept" value="check">&nbsp;Accepts Etsy Gift Cards</li>
+            <li><input type="checkbox" class="check" name="custom" value="custom">&nbsp;Customizable</li>
+          </ul>
+          <hr class="thin">
+        </div>
+        <h3>Shop Location</h3>
+        <div class="shop">
+          <form>
+            <input type="radio" name="anywhere" value="anywhere" checked>Anywhere
+            <br>
+            <input type="radio" name="us" value="us">United States
+          </form>
+          <p>Choose a custom location</p>
+        </div>
+        <h3>Ships to</h3>
+        <form name="shiplocale">
+        <div>
+          <select name="selectlocale">
+          <option value="unitedstates">United States</option>
+          <option value="other">Some Other Place</option>
+          <option value="other">Some Other Place</option>
+          </select>
+        </div>
+        </form>
+      </div><!-- END COL 1 -->
+      <div class="product rounded">
+        <div class="image">
+          <img src="https://img1.etsystatic.com/021/0/7905522/il_340x270.481243001_lvze.jpg" alt="image">
+        </div>
+        <div class="title">Personalized Mini-Oak Whiskey Barrel</div>
+        <div class="vendor">MypersonalMem...</div>
+        <div class="price">$49.95</div>
       </div>
-      <h3>Ships to</h3>
-      <form name="shiplocale">
-      <div>
-        <select name="selectlocale">
-        <option value="unitedstates">United States</option>
-        <option value="other">Some Other Place</option>
-        <option value="other">Some Other Place</option>
-        </select>
+      <div class="product rounded">
+        <div class="image">
+          <img src="https://img1.etsystatic.com/021/0/7905522/il_340x270.481243001_lvze.jpg" alt="image">
+        </div>
+        <div class="title">Personalized Mini-Oak Whiskey Barrel</div>
+        <div class="vendor">MypersonalMem...</div>
+        <div class="price">$49.95</div>
       </div>
-    </div>
-    <div class="col2">
-    </div>
-    <div class="col3">
-    </div>
-    <div class="col4">
-    </div>
+      <div class="product rounded">
+        <div class="image">
+          <img src="https://img1.etsystatic.com/021/0/7905522/il_340x270.481243001_lvze.jpg" alt="image">
+        </div>
+        <div class="title">Personalized Mini-Oak Whiskey Barrel</div>
+        <div class="vendor">MypersonalMem...</div>
+        <div class="price">$49.95</div>
+      </div>
+      
+    </div><!-- END WRAPPER FOR COLUMNS -->
     <div class="bott-text">
     </div>
     <footer class="lists"></footer>
