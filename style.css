@@ -50,18 +50,27 @@ width: 100%;
 
 .search {
   float: left;
+  margin-left: 20px;
 }
 
-    form{
-      width: 375px;
-      margin: 0 auto;
+    form {
+      width: 360px;
+      margin: 5px auto 0 auto;
     }
     .search-field { 
-      padding: 6px 15px 6px 30px;
-      margin: 3px; 
+      padding: 6px 15px 6px 30px; 
       background-color: #fbfbfa; 
-      border: 1px solid #b2b2b2;
-      height: 30px;
+      border: 1px solid #e5e5e5;
+      height: 35px;
+      border-radius: 3px 0px 0px 3px; 
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      vertical-align: 1px;
+      box-shadow:inset 0px 0px 2px rgba(3,3,3,.2);
+      -webkit-box-shadow:inset 0px 0px 2px rgba(3,3,3,.2);
+      -moz-box-shadow:inset 0px 0px 2px rgba(3,3,3,.2);
+
     }
 
     .rounded { 
@@ -71,25 +80,56 @@ width: 100%;
     }
 
     .submit { 
-      height: 30px;
-      color:#red;
+      height: 35px;
+      position:relative;
+      padding:6px 15px;
+      left:-5px;
+      border: 1px solid #54acc7;
+      background-color:#4fa9c6;
+      color:#fafafa;
+      font-size: 1em;
+      font-weight: bold;
+      border-radius: 0 3px 3px 0; 
+      -moz-border-radius: 0 3px 3px 0; 
+      -webkit-border-radius: 0 3px 3px 0;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      box-shadow:inset 0px 2px 2px rgba(255,255,255,.5);
+      -webkit-box-shadow:inset 0px 2px 2px rgba(255,255,255,.5);
+      -moz-box-shadow:inset 0px 2px 2px rgba(255,255,255,.5);
     }
 
 .browse {
   float:left;
+  margin-top: 5px;
 }
 
     .browse button {
+      width: 80px;
       color:#666666;
       font-family: Helvetica, Arial, sans-serif;  
-      font-size: .90em;
-      height: 45px;
-      padding: 6px 5px 6px 5px;
+      font-size: 1em;
+      height: 35px;
+      padding: 6px 8px;
+      border: 1px solid #e5e5e5;
+      background-color: #fbfbfa; 
       border-radius:3px; 
       -moz-border-radius:3px; 
       -webkit-border-radius:3px;
-      border: 1px solid #dfdfdf;
-      background-color: #fbfbfa; 
+      position: relative;
+      text-align: left;
+    }
+
+    
+    .browse button:after {
+    content: '';
+    position: absolute;
+    top: 14px; right: 8px;
+    height: 0; width: 0;
+    border-style: solid;
+    border-width: 5px 4px 0 5px;
+    border-color: #bbbbbb transparent transparent transparent;
     }
 
 .top-text {
@@ -257,3 +297,115 @@ ul.left-nav {
   color:#78c042;
   float: right;
 }
+
+.main-nav {
+  list-style-type: none;
+  margin: 0px 0px 0px 280px;
+  padding: 0px;
+  float: left;
+  color: #1199ba;
+
+}
+
+.main-nav li {
+  display: inline;
+}
+
+
+.main-nav button {
+  border: 1px solid #e5e5e5;
+  color: #1199ba;
+  width: 60px;
+  font-family: Helvetica, Arial, sans-serif;  
+  font-size: 1em;
+  height: 35px;
+  padding: 6px 5px;
+  border: 1px solid #1199ba;
+  background-color: #fbfbfa; 
+  border-radius:3px; 
+  -moz-border-radius:3px; 
+  -webkit-border-radius:3px;
+  margin: 0 15px;
+}
+
+.cart {
+  float: right;
+  color: #888888;
+  font-size: .9em;
+}
+
+.cart p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.shopping-cart {
+  width: 20px;
+  height: auto;
+}
+
+.shopping-cart:hover { /* not working */
+  fill: #000;
+}
+
+.pipe {
+  color: #e5e5e5;
+}
+/*-----------------------------------RADIO FORM--*/
+.radio-form {
+    list-style-type: none;
+    margin:0px;
+    padding: 0px;
+}
+
+div {
+  margin: 0 0 0.75em 0;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label a:link {
+  color: #0d97b9;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+input[type="radio"] + label span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-bottom: 5px;
+  vertical-align: middle;
+  cursor: pointer;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #c3bebc;
+  background: #FFFFFF;
+  background: -webkit-linear-gradient(top, #ffffff 20%, #e9e9e8);
+  background: -moz-linear-gradient(top, #ffffff 20%, #e9e9e8);
+  background: -o-linear-gradient(top, #ffffff 20%, #e9e9e8);
+  background: linear-gradient(top, #ffffff 20%, #e9e9e8);
+  -webkit-box-shadow: 0 1px 3px -1px #cdc9c6;
+  -moz-box-shadow: 0 1px 3px -1px #cdc9c6;
+  box-shadow: 0 1px 3px -1px #cdc9c6;
+}
+
+input[type="radio"]:checked + label span {
+  background-color: #159abb;
+  box-shadow:inset 0px 0px 0px 3px rgba(255,255,255, 1);
+  -webkit-box-shadow:inset 0px 0px 0px 3px rgba(255,255,255, 1);
+  -moz-box-shadow:inset 0px 0px 3px 0px rgba(255,255,255, 1);
+}
+
+input[type="radio"]:checked + label a {
+    font-weight: bold;
+    color: #666666;
+    text-decoration: none;
+}
+
+
+
+
+

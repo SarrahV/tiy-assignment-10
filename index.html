@@ -14,16 +14,32 @@
         <div class="logo">
           <img src="assets/etsy-logo.png">
         </div>
-        <div class="search"><!-- BEGIN FORM -->
+        <div class="search"><!-- BEGIN SEARCH FORM -->
           <form class="search-form" action="" method="">
-            <input class="search-field rounded" type="text" name="search" placeholder="Search for items or shops" size="40">
-            <input class="submit" type="submit" name="submit" value="search">
-          </form><!-- END FORM -->
+            <input class="search-field" type="text" name="search" placeholder="Search for items or shops" size="35">
+            <input class="submit" type="submit" name="submit" value="Search">
+          </form><!-- END SEARCH FORM -->
         </div>
         <div class="browse">
           <button>Browse</button>
         </div>
-        <nav></nav>
+        <nav>
+          <ul class="main-nav">
+            <li>Register</li>
+            <li><button>Sign In</button></li>
+            <li class="pipe">|</li>
+          </ul>
+          <div class="cart"><!-- SHOPPING CART SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 19.6 19.8" enable-background="new 0 0 19.6 19.8" xml:space="preserve" class="shopping-cart">
+                <g>
+                  <path fill="#666666" d="M2.7 2.3c0 0-1.4 0.3-2 0s-1.2-1.6 0-2.1c1.1-0.5 3.4 0 3.9 1.2c0.3 0.8 0.7 4.1 0.7 4.1s13.8-0.3 14.3 0 S17.3 14 17.3 14L5.1 14.7L2.7 2.3z"/>
+                  <circle fill="#545554" cx="6.4" cy="18.2" r="1.6"/>
+                  <circle fill="#545554" cx="15.3" cy="18.2" r="1.6"/>
+                </g>
+                <p>Cart</p>
+              </svg>
+          </div>
+        </nav>
       </div>   
     </header><!-- HEADER -->
     <div class="top-text">
@@ -32,15 +48,24 @@
     <div class="col-wrap"><!-- WRAPPER FOR COLUMNS -->
       <div class="col1 rounded"><!-- COL1 -->
         <h3>Item Type</h3>
-        <form>
-          <input type="radio" name="all-items" value="all-items" checked>All Items
-          <br>
-          <input type="radio" name="handmade" value="handmade">Handmade
-          <br>
-          <input type="radio" name="vintage" value="vintage">Vintage
-          <br>
-          <input type="radio" name="crafts" value="crafts">Craft Supplies
-        </form>
+        <ul class="radio-form">
+          <li>
+            <input type="radio" name="item-type" value="" checked="checked" id="r1"/>
+            <label for="r1"><span></span><a href="#">All Items</a></label>
+          </li>
+          <li>
+            <input type="radio" name="item-type" value="" checked="checked" id="r2"/>
+            <label for="r2"><span></span><a href="#">Handmade</a></label>             
+          </li>
+          <li>
+            <input type="radio" name="item-type" value="" checked="checked" id="r3"/>
+            <label for="r3"><span></span><a href="#">Vintage</a></label>
+          </li>
+          <li>
+            <input type="radio" name="item-type" value="" checked="checked" id="r4"/>
+            <label for="r4"><span></span><a href="#">Craft Supplies</a></label>
+          </li>
+        </ul>
         <hr class="thin">
         <h3>Categories</h3><!-- CAT -->
         <h3 class="blue">Handmade</h3>
