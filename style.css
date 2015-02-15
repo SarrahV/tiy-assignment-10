@@ -149,27 +149,25 @@ width: 100%;
   background-color:#fff;
   padding: 5px 15px;
   float: left;
-  margin: 0 30px 0 0px;
+  margin: 0 30px 100% 0px;
   border: 1px solid #ececec;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.col1 a:link {
+.col1 a:link, .foot-nav a:link, .foot-nav-last a:link {
   color: #1199ba;
   text-decoration: none;
 }
-.col1 a:visited {
+.col1 a:visited, .foot-nav a:visited, .foot-nav-last a:visited {
   color: #666666;
   text-decoration: none;
 }
-.col1 a:hover {
+.col1 a:hover, .foot-nav a:hover, .foot-nav-last a:hover  {
   color: #1199ba;
   text-decoration: underline;
 }
-
-
 
 .blue {
   color: #1199ba;
@@ -202,27 +200,27 @@ ul.left-nav {
 
 
 .price-filter textarea {
-      color:#ccc;
-      font-family: Helvetica, Arial, sans-serif;  
-      font-size: 1.2em;
-      height: 35px;
-      width: 60px;
-      padding: 10px 5px 6px 5px;
-      border-radius:3px; 
-      -moz-border-radius:3px; 
-      -webkit-border-radius:3px;
-      border: 1px solid #c3bebc;
-      background-color: #fff; 
-      float: left;
-      margin-bottom: 20px;
-      resize: none;
-      text-align: left;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-      box-shadow:inset 0px 0px 2px rgba(3,3,3,.2);
-      -webkit-box-shadow:inset 0px 0px 2px rgba(3,3,3,.2);
-      -moz-box-shadow:inset 0px 0px 2px rgba(3,3,3,.2);
+  color:#ccc;
+  font-family: Helvetica, Arial, sans-serif;  
+  font-size: 1.2em;
+  height: 35px;
+  width: 60px;
+  padding: 10px 5px 6px 5px;
+  border-radius:3px; 
+  -moz-border-radius:3px; 
+  -webkit-border-radius:3px;
+  border: 1px solid #c3bebc;
+  background-color: #fff; 
+  float: left;
+  margin-bottom: 20px;
+  resize: none;
+  text-align: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  box-shadow:inset 0px 0px 2px rgba(3,3,3,.2);
+  -webkit-box-shadow:inset 0px 0px 2px rgba(3,3,3,.2);
+  -moz-box-shadow:inset 0px 0px 2px rgba(3,3,3,.2);
 }
 
 .price-filter button {
@@ -305,16 +303,6 @@ ul.left-nav {
   padding: 0px;
   color: #1199ba;
 }
-
-/*.checkbox {
-   border-radius:3px; 
-  -moz-border-radius:3px; 
-  -webkit-border-radius:3px;
-  outline: 1px solid #dfdfdf;
-  background-color: #fbfbfa; 
-  width: 20px;
-  height: 20px;
-} */
 
 .shop {
   margin-bottom: 30px;
@@ -578,6 +566,89 @@ input[type="radio"]:checked + label a {
   cursor: pointer;
 
 }
+
+/*-----------------------------------------------FOOTER --*/
+
+.lists {
+  width: 100%;
+  clear: both;
+}
+
+.foot-wrap {
+  margin: 0 auto 0 auto;
+  width: 960px;
+}
+
+.foot-nav {
+  color: #333333;
+  width: 175px;
+  list-style-type: none;
+  margin: 0 25px 50px 0;
+  padding: 0;
+  float: left;
+  font-size: .9em;
+  line-height: 2em;
+}
+
+.foot-nav li:first-child {
+  line-height: 1.5em;
+}
+
+.foot-nav-last {
+  color: #333333;
+  width: 150px;
+  list-style-type: none;
+  margin:0 0 50px 0;
+  padding: 0;
+  float: left;
+  font-size: .9em;
+  line-height: 2em;
+}
+
+.foot-nav-last img {
+  float: left;
+  margin-right: 5px;
+  width: 18px;
+  height: 18px;
+  padding-top: 3px;
+
+}
+
+.foot-nav button {
+  height: 28px;
+  position:relative;
+  padding:3px 10px;
+  border: 1px solid #54acc7;
+  background-color:#4fa9c6;
+  color:#fafafa;
+  font-size: .9em;
+  border-radius: 3px 3px 3px 3px; 
+  -moz-border-radius: 3px 3px 3px 3px; 
+  -webkit-border-radius: 3px 3px 3px 3px; 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  box-shadow:inset 0px 2px 2px rgba(255,255,255,.5);
+  -webkit-box-shadow:inset 0px 2px 2px rgba(255,255,255,.5);
+  -moz-box-shadow:inset 0px 2px 2px rgba(255,255,255,.5);
+}
+
+.foot-nav button:hover {
+  border: 1px solid #54acc7;
+  background-color:#1699b9;
+  color:#fafafa;
+  font-size: .9em;
+  border-radius: 3px 3px 3px 3px; 
+  -moz-border-radius: 3px 3px 3px 3px; 
+  -webkit-border-radius: 3px 3px 3px 3px; 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  box-shadow:inset 0px 2px 2px rgba(255,255,255,.5);
+  -webkit-box-shadow:inset 0px 2px 2px rgba(255,255,255,.5);
+  -moz-box-shadow:inset 0px 2px 2px rgba(255,255,255,.5);
+}
+
 
 
 
