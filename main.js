@@ -31,7 +31,6 @@ $(function(){
   });
 
 
-
   $(".search-form").on("submit", function(event) {
     event.preventDefault();
     
@@ -42,13 +41,10 @@ $(function(){
       console.log(items);
         $(".products").empty();
       items.forEach(function(item){
-        $(".products").append(productTemp(item));   //this will look over items and add results to template
+        $(".products").append(productTemp(item));
       });
     });
   });
-
-
-
 
   var productTemp = _.template(
     "<div class='product rounded'>" +
@@ -60,12 +56,6 @@ $(function(){
       "<div class='price'>$<%= price %> <%= currency_code %></div>" +
     "</div>"
   );
-
-  // mytemplate for products
-
-
-
-
 
 }); // end of function scope
 
