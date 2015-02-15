@@ -5,6 +5,8 @@ price - #1199ba
 hr - #dfdfdf
 text - #b2b2b2*/
 
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
 body {
   margin: 0;
   padding: 0;
@@ -304,7 +306,7 @@ ul.left-nav {
   color: #1199ba;
 }
 
-.checkbox {
+/*.checkbox {
    border-radius:3px; 
   -moz-border-radius:3px; 
   -webkit-border-radius:3px;
@@ -312,7 +314,7 @@ ul.left-nav {
   background-color: #fbfbfa; 
   width: 20px;
   height: 20px;
-}
+} */
 
 .shop {
   margin-bottom: 30px;
@@ -484,6 +486,105 @@ input[type="radio"]:checked + label a {
     color: #666666;
     text-decoration: none;
 }
+
+/*-------------------------------------------------ORDERING CHECKBOXES---*/
+
+.checkbox-form {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left:0; top: -5px;
+  width: 13px; height: 13px;
+  border: 1px solid #aaa;
+  background: #f8f8f8;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.3);
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: "\f046";
+  position: absolute;
+  bottom: -4px ; left: 0;
+  font-size: 19px;
+  color: #159abb;
+  transition: all .2s;
+  font-family: FontAwesome;
+  border: #fff;
+  box-shadow: none;
+}
+
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+[type="checkbox"]:disabled + label {
+  color: #aaa;
+}
+
+/*--------------------------------------------------SHIPLOCALE--*/
+
+
+ .shipping-to {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ship-to-form {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.select-ship {
+  max-width: 200px;
+  padding: 6px 15px 6px 30px; 
+  background-color: #fbfbfa; 
+  border: 1px solid #e5e5e5;
+  height: 35px;
+  border-radius: 3px 0px 0px 3px; 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: 1px;
+  box-shadow:inset 0px 0px 2px rgba(3,3,3,.2);
+  -webkit-box-shadow:inset 0px 0px 2px rgba(3,3,3,.2);
+  -moz-box-shadow:inset 0px 0px 2px rgba(3,3,3,.2);
+  position: relative;
+  cursor: pointer;
+
+}
+
+
+
+
+
+
+
 
 
 
