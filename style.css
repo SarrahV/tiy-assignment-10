@@ -481,7 +481,7 @@ input[type="radio"] + label span {
   box-shadow: 0 1px 3px -1px #cdc9c6;
 }
 input[type="radio"]:checked + label span {
-  background-color: #159abb;
+  background: #159abb;
   box-shadow:inset 0px 0px 0px 3px rgba(255,255,255, 1);
   -webkit-box-shadow:inset 0px 0px 0px 3px rgba(255,255,255, 1);
   -moz-box-shadow:inset 0px 0px 3px 0px rgba(255,255,255, 1);
