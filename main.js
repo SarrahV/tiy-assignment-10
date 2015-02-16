@@ -51,8 +51,8 @@ $(function(){
       "<div class='image'>" +
         "<img src='<%= Images[0].url_570xN %>' alt='<%= title %>'>" +
       "</div>" +
-      "<div class='title'><%= title %></div>" +
-      "<div class='vendor'><%= Shop.shop_name %></div>" +
+      "<div class='title'><a href='<%= url %>'><%= title %></a></div>" +
+      "<div class='vendor'><a href='<%= Shop.url %>'><%= Shop.shop_name %></a></div>" +
       "<div class='price'>$<%= price %> <%= currency_code %></div>" +
     "</div>"
   );
